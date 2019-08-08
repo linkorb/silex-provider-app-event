@@ -1,0 +1,29 @@
+{
+    "name": "linkorb/silex-provider-app-event",
+    "type": "library",
+    "description": "Provides a way for applications to integrate a standard scheme for logging Application Events",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LinkORB",
+            "email": "engineering@linkorb.com",
+            "role": "Development"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "linkorb/app-event": "^1.0",
+        "monolog/monolog": "^1.24",
+        "pimple/pimple": "^3.0",
+        "psr/log": "^1.0",
+        "symfony/security-core": "~2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "LinkORB\\AppEventLogger\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
